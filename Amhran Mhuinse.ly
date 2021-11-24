@@ -7,13 +7,24 @@
 
 % Transpose 
 <<
+  
+  
   \language "français"
-  \relative do' {
-     \key sol \major
-     re4. mi8 sol4 \grace{sol8} la4 
-     la4. si8 \grace{si8} re4
-     \grace{re8} mi \grace{fad8 mi} re4
-     \grace{la8} si4 \grace{do8 si la} sol2
-     \grace{mi8} sol4 \grace{la8 sol} mi4 \grace{si8} re4
+  \chords {
+    do2.
+    R2.*4
+    fa
+  }
+  \new Staff  \relative do'' { 
+     \key re \minor
+     \time 3/4 
+     
+     % measure 175 sur Capo
+     sol4. la8 do4 do8 re8 (re2) 
+     mi4  mi8 sol (sol4) la4 \glissando sol mi
+     mi4 \glissando do2
+     (do4) do2
+     la8 sol (sol4.)
+     
   }
 >>
